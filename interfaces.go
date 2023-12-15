@@ -5,7 +5,7 @@ import (
 )
 
 type Redis interface {
-	reDial() bool
+	ReDial() bool
 	Set(key string, value interface{}, expiration time.Duration) error
 	Get(key string) (string, error)
 	Exists(keys ...string) (bool, error)
